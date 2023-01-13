@@ -13,15 +13,21 @@ namespace RekursionTest
         public void RercursionFakultätTest_RecursionOf3x2x1()
         {
             MyRecursion mr = new MyRecursion();
-            int rekursiontest = mr.Fakultät_Recursive(3);
-            Assert.AreEqual(6, rekursiontest);
+            int rekursiontest1 = mr.Fakultät_Recursive(3);
+            int rekursiontest2 = mr.Fakultät_Recursive(4);
+            Assert.AreEqual(6, rekursiontest1);
+            Assert.AreEqual(24, rekursiontest2);
         }
         [Test]
-        public void RercursionFakultätTest_RecursionOf4x3x2x1()
+        public void RercursionFibonacciTest_RecursionOfFibonacciFive()
         {
-            MyRecursion mr = new MyRecursion();
-            int rekursiontest = mr.Fakultät_Recursive(4);
-            Assert.AreEqual(24, rekursiontest);
+            FibonacciRecursion mr = new FibonacciRecursion();
+            int rekursiontest1 = mr.Fibonacci_Recursive(5);
+            int rekursiontest2 = mr.Fibonacci_Recursive(6);
+            int rekursiontest3 = mr.Fibonacci_Recursive(7);
+            Assert.AreEqual(5, rekursiontest1);
+            Assert.AreEqual(8, rekursiontest2);
+            Assert.AreEqual(13, rekursiontest3);
         }
     }
 }
