@@ -9,7 +9,6 @@ namespace Rekursionen
 {
     public class MyRecursion
     {
-
         public int Fakultät_Recursive(int number)
         {
             

@@ -23,5 +23,19 @@ namespace RekursionTest
             int rekursiontest = mr.Fakultät_Recursive(4);
             Assert.AreEqual(24, rekursiontest);
         }
+        [Test]
+        public void RercursionFibonacciTest_RecursionOfFibonacciFour()
+        {
+            FibonacciRecursion mr = new FibonacciRecursion();
+            int rekursiontest = mr.Fibonacci_Recursiv(4);
+            Assert.AreEqual(3, rekursiontest);
+        }
+        [Test]
+        public void RercursionFibonacciTest_RecursionOfFibonacciFive()
+        {
+            FibonacciRecursion mr = new FibonacciRecursion();
+            int rekursiontest = mr.Fibonacci_Recursiv(5);
+            Assert.AreEqual(5, rekursiontest);
+        }
     }
 }
