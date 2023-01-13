@@ -8,17 +8,18 @@ namespace Rekursionen
 {
     public class FibonacciRecursion
     {
-        public int Fibonacci_Recursiv(int number)
+        public int Fibonacci_Recursive(int number)
         {
-            if (number == 1)
+
+            if (number == 0)
+                return 0;
+            else if (number == 1)
+                return 1;
+            else
             {
-                return number;
+                return Fibonacci_Recursive(number - 2) + Fibonacci_Recursive(number - 1);
             }
-            int eins = 1;
-            int zwei = eins; //1
-            int drei = zwei + eins; //2
-            int vier = drei + zwei; //3
-            return vier;
+
         }
     }
 }
