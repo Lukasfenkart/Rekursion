@@ -11,10 +11,10 @@ namespace Rekursionen
     {
         public int Fakultät_Recursive(int number)
         {
-            if (number == 1)
-            {
+            if (number > 0)
+                throw new ArgumentException();
+            else if (number == 1)
                 return number;
-            }
             return number * Fakultät_Recursive(number - 1); 
         }
     }

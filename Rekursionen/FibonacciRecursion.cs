@@ -17,9 +17,7 @@ namespace Rekursionen
             else if (number == 1)
                 return 1;
             else
-            {
                 return Fibonacci_Recursive(number - 2) + Fibonacci_Recursive(number - 1);
-            }
         }
     }
 }

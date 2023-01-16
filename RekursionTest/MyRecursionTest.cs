@@ -10,7 +10,7 @@ namespace RekursionTest
         {
         }
         [Test]
-        public void RercursionFakultätTest_RecursionOf3x2x1()
+        public void RercursionFakultätTest_RecursionOfNumber_RecursionEqualsNumberTimesNumberMinusOne()
         {
             MyRecursion mr = new MyRecursion();
             int rekursiontest1 = mr.Fakultät_Recursive(3);
@@ -19,7 +19,7 @@ namespace RekursionTest
             Assert.AreEqual(24, rekursiontest2);
         }
         [Test]
-        public void RercursionFibonacciTest_RecursionOfFibonacciFive()
+        public void RercursionFibonacciTest_RecursionOfFibonacciNumber_RecursionEqualsNumberMinusTwoPlusNumberMinusOne()
         {
             FibonacciRecursion mr = new FibonacciRecursion();
             int rekursiontest1 = mr.Fibonacci_Recursive(5);
