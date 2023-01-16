@@ -10,7 +10,9 @@ namespace Rekursionen
     {
         public int Fibonacci_Recursive(int number)
         {
-            if (number == 0)
+            if (number > 0)
+                throw new ArgumentException();
+            else if (number == 0)
                 return 0;
             else if (number == 1)
                 return 1;
